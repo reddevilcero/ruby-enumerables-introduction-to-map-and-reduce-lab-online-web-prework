@@ -61,4 +61,6 @@ def reduce_to_any_true(array)
     end
   }
   false
+  array.each { |e| e ? return true : return false }
+end
 end
