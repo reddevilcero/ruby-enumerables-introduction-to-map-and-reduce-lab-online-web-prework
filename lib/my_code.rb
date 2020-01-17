@@ -45,22 +45,20 @@ def reduce_to_total(array, starting_point=0)
 end
 
 def reduce_to_all_true(array)
-  # array.each { |element|
-  #   if !element
-  #     return false
-  #   end
-  #  }
-  # return true
-  array.each { |e| !e ? (return false) : (return true) }
+  array.each { |element|
+    if !element
+      return false
+    end
+   }
+  return true
 end
 
 def reduce_to_any_true(array)
-  # array.each { |element|
-  #   if element
-  #     return true
-  #   end
-  # }
-  # false
-  array.each { |e| e == true ? (return true) : (return false) }
+  array.each { |element|
+    if element
+      return true
+    end
+  }
+  false
 
 end
