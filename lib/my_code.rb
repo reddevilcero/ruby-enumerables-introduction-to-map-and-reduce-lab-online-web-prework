@@ -44,6 +44,6 @@ def reduce_to_total(array, starting_point)
       values += array[count]
       count+=1
   end
-  
+
   value
 end
