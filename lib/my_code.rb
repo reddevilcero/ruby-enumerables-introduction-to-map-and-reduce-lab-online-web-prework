@@ -37,15 +37,9 @@ def map_to_square(array)
 end
 
 def reduce_to_total(array, starting_point=0)
-  value = 0
-  count = starting_point
+  value = starting_point
 
-  p starting_point
-  p array
-  while count < array.size do
-      value += array[count]
-      count+=1
-  end
+  array.each { |element| value += element  }
 
   value
 end
