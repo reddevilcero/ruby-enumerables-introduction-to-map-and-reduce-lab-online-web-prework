@@ -43,3 +43,12 @@ def reduce_to_total(array, starting_point=0)
 
   value
 end
+
+def reduce_to_all_true(array)
+  array.each { |element|
+    if element == false
+      return false
+    end
+   }
+  return true
+end
