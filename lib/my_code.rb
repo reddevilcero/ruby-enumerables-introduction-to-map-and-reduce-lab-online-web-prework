@@ -51,6 +51,7 @@ def reduce_to_all_true(array)
     end
    }
   return true
+  array.each { |e| !e ? return false : return true }
 end
 
 def reduce_to_any_true(array)
